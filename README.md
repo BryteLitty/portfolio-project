@@ -1,6 +1,7 @@
 ## Hello-Microvese
-This my portfolion website project. This is a simple project to showcase my projects and also to tell a brief more about myselt. 
-This is one early stage projects as a Microverse Student.
+This my portfolion website project. This is a simple project to showcase my projects and also tell somethig brief more about myself.
+This is one early stage projects as a Microverse Student
+
 
 ### Built With
 - HTML 
@@ -22,6 +23,8 @@ To run the project do the following:
 - Right click anywhre in the HTML file and select "Open With Live Server"
 - Wait for a new tab to open
 - Voila! You're project is Live. You can procceed to make changes to the files
+
+**NB**: This is the mobile version of the project. You're therefore required to use the inspect element on chrome to be able to enjoy the be view functionality. Hence, this will likely not look so good on desktop, except on mobile.
 
 ##### Author
 - Github: [@BryteLitty](https://github.com/Bryte)
