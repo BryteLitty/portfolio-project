@@ -16,7 +16,6 @@ body {
   font-weight: 700;
 }
 
-
 @media (max-width: 480px) {
   .nav-flex {
     display: flex;
@@ -32,7 +31,7 @@ body {
 
   .headline {
     background-image: url("./images/header-shapes\ mobile@2x.svg");
-    ;
+    
   }
 
   .headline .container {
@@ -41,7 +40,6 @@ body {
     padding-top: 115px;
     display: flex;
     flex-direction: column;
-    
   }
 
   .intro {
@@ -71,6 +69,4 @@ body {
     align-items: flex-start;
     justify-content: space-between;
   }
-
-  
 }
