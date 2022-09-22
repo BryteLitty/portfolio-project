@@ -37,7 +37,7 @@ body {
     background-image: url("./images/header-shapes\ mobile@2x.svg");
   }
 
-  .container {
+  main .container {
     margin: 0 20px;
     height: 100vh;
     display: flex;
@@ -74,5 +74,23 @@ body {
   .social i {
     color: #172b4d;
     font-size: 18px;
+  }
+
+  .works .container{
+    margin: au;
+  }
+
+  .works .card {
+    width: 327px;
+    height: 552px;
+    padding: 16px;
+    gap: 12px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
