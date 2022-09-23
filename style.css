@@ -73,14 +73,12 @@ body {
     justify-content: space-between;
   }
 
-
   #works .container {
     display: grid;
     row-gap: 88px;
     background-color: #fbfbfb;
     padding: 114px 0;
   }
-  
 
   #works .card {
     height: 552px;
@@ -92,7 +90,7 @@ body {
     margin: auto 25px;
   }
 
-  .card img{
+  .card img {
     width: 100%;
   }
 
@@ -103,7 +101,7 @@ body {
 
   .below {
     width: 80%;
-    color: #7A869A;
+    color: #7a869a;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -122,13 +120,12 @@ body {
     width: 8px;
   }
 
-  
   .card .desc {
     color: #344563;
     margin: 10px 0;
   }
 
-  .skills ul{
+  .skills ul {
     padding-top: 10px;
     width: 75%;
     list-style-type: none;
@@ -138,7 +135,7 @@ body {
   }
 
   .skills li {
-    background-color: #EBEBFF;
+    background-color: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
   }
@@ -158,16 +155,15 @@ body {
     border-radius: 8px;
   }
 
-  .card bottom:hover{
+  .card button:hover {
     background-color: #3965f2;
     color: white;
   }
 
   #about .container {
-    margin: 0 20px;
+    margin: 0  20px 114px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 114px;
   }
 
   #about .about-me {
@@ -180,10 +176,22 @@ body {
   .btn-resume {
     margin-top: 20px;
   }
+
   .languages h1 {
     font-weight: 400;
     font-size: 20px;
     color: #000;
+  }
+
+  .languages li {
+    list-style-type: none;
+  }
+
+  .languages .flex-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px 12px;
   }
 
   .languages .lang {
@@ -196,21 +204,16 @@ body {
     align-items: center;
   }
 
-  .languages .lang p{
+  .languages .lang p {
     margin-left: 16px;
   }
 
-  
-  .languages .text {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    padding: 9px;
+  .fix {
+    margin: 0;
+    padding: 0;
   }
 
   hr {
-    height: 1px;
-    background-color: #DFE1E6;
-    margin: 0 8px;
+    border: 0.5px solid #dfe1e6;
   }
 }
