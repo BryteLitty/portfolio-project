@@ -33,20 +33,22 @@ body {
     font-size: 22px;
   }
 
-  main {
+  .headline {
     background-image: url("./images/header-shapes\ mobile@2x.svg");
   }
 
-  main .container {
+  .headline .container {
     margin: 0 20px;
-    height: 100vh;
+    height: 587.15px;
+    padding-top: 115px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
-  .headline {
-    font-size: 20px;
+  .intro {
+    font-size: 28px;
+    color: #172b4d;
+    font-weight: 900;
   }
 
   .primary-text {
@@ -63,7 +65,7 @@ body {
   }
 
   .social ul {
-    width: 40%;
+    width: 50%;
     padding-top: 7px;
     list-style: none;
     display: flex;
@@ -71,14 +73,15 @@ body {
     justify-content: space-between;
   }
 
-  .social i {
+  /* .social i {
     color: #172b4d;
     font-size: 18px;
-  }
+  } */
 
   #works .container {
     display: grid;
     row-gap: 88px;
+    margin: 88px 0;
   }
   
 
