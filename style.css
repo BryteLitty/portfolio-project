@@ -68,4 +68,149 @@ body {
     align-items: flex-start;
     justify-content: space-between;
   }
+
+
+  #works .container {
+    display: grid;
+    row-gap: 88px;
+    background-color: #fbfbfb;
+    padding: 114px 0;
+  }
+
+  #works .card {
+    height: 552px;
+    padding: 16px;
+    gap: 12px;
+    border: 1px solid #dfe1e6;
+    background-color: white;
+    border-radius: 16px;
+    margin: auto 25px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .texts h1 {
+    color: #172b4d;
+    font-size: 32px;
+  }
+
+  .below {
+    width: 80%;
+    color: #7a869a;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .below .canopy {
+    text-transform: uppercase;
+    color: #344563;
+    font-weight: 600;
+  }
+
+  .below img {
+    height: 8px;
+    width: 8px;
+  }
+
+  .card .desc {
+    color: #344563;
+    margin: 10px 0;
+  }
+
+  .skills ul {
+    padding-top: 10px;
+    width: 75%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #6070ff;
+  }
+
+  .skills li {
+    background-color: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+  }
+
+  .card button,
+  .btn-resume {
+    margin: 28px 0;
+    border: 1px solid #3965f2;
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    text-align: center;
+    color: #3965f2;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 8px;
+  }
+
+  .card button:hover {
+    background-color: #3965f2;
+    color: white;
+  }
+
+  #about .container {
+    margin: 0  20px 114px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about .about-me {
+    font-size: 28px;
+    color: #172b4d;
+    font-weight: 900;
+    margin-top: 114px;
+  }
+
+  .btn-resume {
+    margin-top: 20px;
+  }
+
+  .languages h1 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .languages li {
+    list-style-type: none;
+  }
+
+  .languages .flex-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px 12px;
+  }
+
+  .languages .lang {
+    background-color: #f7f7f9;
+    margin: 36px 12px;
+    padding: 9px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .languages .lang p {
+    margin-left: 16px;
+  }
+
+  .fix {
+    margin: 0;
+    padding: 0;
+  }
+
+  hr {
+    border: 0.5px solid #dfe1e6;
+  }
 }
