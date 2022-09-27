@@ -220,5 +220,27 @@ body {
     background: url(./images/contact-form-shape.svg) no-repeat 50% 50%;
   }
 
+  .footer-container {
+    margin: 24px;
+  }
+
+  input, textarea {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+
+  footer li {
+    list-style-type: none;
+  }
+
+  input[value] {
+    color: #172b4d;
+    font-weight: 400;
+    font-size: 17px;
+  }
 
 }
