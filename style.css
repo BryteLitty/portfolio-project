@@ -212,4 +212,13 @@ body {
   hr {
     border: 0.5px solid #dfe1e6;
   }
+
+  footer {
+    background-color: #6070FF;
+  }
+  .footer-container {
+    background: url(./images/contact-form-shape.svg) no-repeat 50% 50%;
+  }
+
+
 }
