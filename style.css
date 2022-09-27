@@ -215,14 +215,37 @@ body {
 
   footer {
     background-color: #6070FF;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 100px 0 0 0;
   }
+  
   .footer-container {
-    background: url(./images/contact-form-shape.svg) no-repeat 50% 50%;
+    background: url(./images/contact-form-shape.svg) no-repeat 100% 30%;
+  }
+  
+
+
+  footer .text-container {
+    margin: 24px;
+    color: white;
+    text-align: center;
   }
 
-  .footer-container {
-    margin: 24px;
+  footer .wrapper {
+    padding: 90px 0;
+    margin: 0 24px;
   }
+  .text-container h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .text-container p {
+    font-weight: 400;
+    color: #EBEBFF;
+  }
+
 
   input, textarea {
     background-color: #fff;
@@ -230,11 +253,12 @@ body {
     width: 100%;
     padding: 15px 16px;
     border-radius: 8px;
-    margin: 20px 0;
+    margin: 15px 0;
   }
 
   footer li {
     list-style-type: none;
+    margin: 0;
   }
 
   input[value] {
