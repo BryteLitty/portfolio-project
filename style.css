@@ -249,6 +249,18 @@ body {
     color: #b3bac5;
   }
 
+  footer button {
+    margin: 15px 0;
+    border: 1px solid;
+    background-color: #fff;
+    padding: 12px 16px;
+    color: #3965f2;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 8px;
+  }
+
   input:invalid {
     box-shadow: 0 0 5px 1px red;
   }
