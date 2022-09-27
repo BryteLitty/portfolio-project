@@ -243,4 +243,17 @@ body {
     font-size: 17px;
   }
 
+  textarea::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    color: #b3bac5;
+  }
+
+  input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+  input:focus:invalid {
+    box-shadow: none;
+  }
 }
