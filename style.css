@@ -82,7 +82,7 @@ nav ul {
 #works .card {
   height: 552px;
   padding: 16px;
-  gap: 12px;
+  /* gap: 12px; */
   border: 1px solid #dfe1e6;
   background-color: white;
   border-radius: 16px;
@@ -115,7 +115,7 @@ nav ul {
 }
 
 .below img {
-  height: 8px;
+  max-height: 8px;
   width: 8px;
 }
 
@@ -301,7 +301,7 @@ input:focus:invalid {
     font-size: 18px;
   }
 
-  .nav-flex{
+  .nav-flex {
     margin: 25px 155px;
     /* height: 70px; */
   }
@@ -330,12 +330,9 @@ input:focus:invalid {
     background: url(./images/desktop/header-shapes\ mobile@2x.svg) no-repeat 100% 30%;
     height: 100vh;
   }
-
-  br {
-    margin: 0;
-  }
   
-  .headline .container {
+  .headline .container,
+  #about .container {
     margin: 0 155px;
     padding: 70px 70px;
   }
@@ -366,4 +363,75 @@ input:focus:invalid {
   
   }
 
+  #works {
+    margin: 0;
+  }
+  
+  #works .container {
+    padding: 142px 142px;
+  }
+
+  #works .card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+    padding: 24px;
+  }
+
+  #works .card img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card .texts {
+    margin: 5px 30px;
+    
+  }
+
+  .below {
+    width: 60%;
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 400;
+  }
+
+  .canopy {
+    font-weight: 500;
+  }
+
+  .below h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  /* .below img {
+    max-height: 100%;
+  } */
+
+  .card .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+  }
+
+  .card .skills ul{
+    width: 48%;
+    margin: 20px 0;
+  }
+
+  .card button {
+    padding: 12px;
+    margin: 32px 0;
+  }
+
+  #works .even {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .even .texts{
+    margin: 5px 15px;
+  }
 }
