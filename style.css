@@ -31,6 +31,7 @@ nav ul {
   display: none;
 }
 
+
 .headline {
   background-image: url("./images/header-shapes\ mobile@2x.svg");
 }
@@ -81,8 +82,6 @@ nav ul {
 #works .card {
   height: 552px;
   padding: 16px;
-
-  /* gap: 12px; */
   border: 1px solid #dfe1e6;
   background-color: white;
   border-radius: 16px;
@@ -187,8 +186,16 @@ nav ul {
 .form-button:hover,
 #about .btn-resume:hover {
   background-color: #3965f2;
-  color: white;
+  color: #fff;
   outline: none;
+}
+
+
+.card button:active,
+.form-button:active,
+#about .btn-resume:active {
+  color: #fff;
+  background-color: #2230D2;
 }
 
 .languages h1 {
@@ -419,7 +426,7 @@ input:focus:invalid {
   }
 
   .card .skills ul {
-    width: 48%;
+    max-width: 50%;
     margin: 25px 0;
   }
 
