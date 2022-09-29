@@ -331,8 +331,7 @@ input:focus:invalid {
     height: 100vh;
   }
   
-  .headline .container,
-  #about .container {
+  .headline .container {
     margin: 0 155px;
     padding: 70px 70px;
   }
@@ -376,6 +375,7 @@ input:focus:invalid {
     grid-template-columns: 50% 50%;
     margin: 20px;
     padding: 24px;
+    border: 2px solid #dfe2fb;
   }
 
   #works .card img {
@@ -413,17 +413,18 @@ input:focus:invalid {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin: 15px 0;
+    margin: 20px 0;
   }
 
   .card .skills ul{
     width: 48%;
-    margin: 20px 0;
+    margin: 25px 0;
   }
 
-  .card button {
+  .card button,
+  #about .btn-resume {
     padding: 12px;
-    margin: 32px 0;
+    margin: 40px 0;
   }
 
   #works .even {
@@ -433,5 +434,65 @@ input:focus:invalid {
 
   .even .texts{
     margin: 5px 15px;
+  }
+
+  #about {
+    background-color: #fff;
+    border-radius: 100px 0 100px 0;
+  }
+
+  #about .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 142px;
+    padding: 142px 70px;
+  }
+
+  #about .about-me {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+  }
+
+  #about .primary-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+  }
+
+
+  #about .social ul{
+    width: 40%;
+  }
+
+  .languages {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .languages h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #344563;
+  }
+
+  .lang-box {
+    display: flex;
+  }
+  .languages .lang {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    padding-left: 12px 12px 20px;
+  }
+
+  .languages .lang p {
+    margin: 12px 0;
+  }
+
+  hr {
+    margin: 20px 0;
   }
 }
