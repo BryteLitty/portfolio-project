@@ -154,9 +154,12 @@ nav ul {
   border-radius: 8px;
 }
 
-.card button:hover {
+.card button:hover,
+#about .btn-resume:hover,
+.contact .form-button:hover {
   background-color: #3965f2;
   color: white;
+  outline: none;
 }
 
 #about .container {
@@ -288,7 +291,7 @@ textarea::placeholder {
 }
 
 input:invalid {
-  box-shadow: 0 0 5px 1px red;
+  /* box-shadow: 0 0 5px 1px red;   */
 }
 
 input:focus:invalid {
@@ -467,6 +470,10 @@ input:focus:invalid {
     width: 40%;
   }
 
+  #about .btn-resume {
+    margin: 25px 0;
+  }
+
   .languages {
     margin-top: 20px;
     margin-left: 30px;
@@ -495,4 +502,41 @@ input:focus:invalid {
   hr {
     margin: 20px 0;
   }
+  
+  .contact {
+    height: auto;
+  }
+  
+  .footer-container {
+    background: url(./images/desktop/contact-desktop-bg.svg) no-repeat 100% 30%;
+    margin: 0 79px;
+  }
+
+  .contact .wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .contact .text-container p {
+    font-size: 20px;
+    line-height: 28px;
+    /* margin-top: 12px; */
+    width: 569px;
+  }
+
+  .contact form {
+    width: 447px;
+    margin: auto;
+
+  }
+
+  .contact .btn-center {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  
 }
