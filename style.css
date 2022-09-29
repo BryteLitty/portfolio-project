@@ -22,9 +22,15 @@ body {
   align-items: center;
   margin: 15px 20px;
 }
-
+main {
+  background-color: #fbfbfb;
+}
 nav button {
   border: none;
+}
+
+.headline-section {
+  border-bottom-left-radius: 100px;
 }
 
 nav ul {
@@ -338,14 +344,12 @@ input:focus:invalid {
   .headline {
     margin: 0 3px 0 34.6px;
     background: url(./images/desktop/header-shapes\ mobile@2x.svg) no-repeat 100% 30%;
-    height: 100vh;
   }
 
   .headline .container {
     margin: 0 155px;
     padding: 70px 70px;
   }
-
   .intro {
     margin-top: 90px;
     font-size: 48px;
@@ -376,6 +380,8 @@ input:focus:invalid {
 
   #works .container {
     padding: 142px 142px;
+    border-bottom-right-radius: 100px;
+
   }
 
   #works .card {
@@ -445,7 +451,6 @@ input:focus:invalid {
 
   #about {
     background-color: #fff;
-    border-radius: 100px 0 100px 0;
   }
 
   #about .container {
