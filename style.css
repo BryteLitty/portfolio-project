@@ -10,6 +10,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+main {
+  background-color: red;
+}
+
 .logo a {
   text-decoration: none;
   color: #6070ff;
@@ -23,16 +27,17 @@ body {
   margin: 15px 20px;
 }
 
-main {
-  background-color: #fbfbfb;
-}
-
 nav button {
   border: none;
 }
 
 .headline-section {
-  border-bottom-left-radius: 100%;
+  background-color: #fbfbfb;
+}
+
+.headline-section .wrapper {
+  border-bottom-left-radius: 100px;
+  background-color: #fff;
 }
 
 nav ul {
@@ -84,6 +89,7 @@ nav ul {
   row-gap: 88px;
   background-color: #fbfbfb;
   padding: 114px 0;
+  border-bottom-right-radius: 100px;
 }
 
 #works .card {
@@ -303,10 +309,6 @@ textarea::placeholder {
   color: #b3bac5;
 }
 
-input:invalid {
-  /* box-shadow: 0 0 5px 1px red;   */
-}
-
 input:focus:invalid {
   box-shadow: none;
 }
@@ -319,8 +321,6 @@ input:focus:invalid {
 
   .nav-flex {
     margin: 25px 155px;
-
-    /* height: 70px; */
   }
 
   nav button {
@@ -383,7 +383,6 @@ input:focus:invalid {
 
   #works .container {
     padding: 142px 142px;
-    border-bottom-right-radius: 100px;
   }
 
   #works .card {
@@ -534,8 +533,6 @@ input:focus:invalid {
   .contact .text-container p {
     font-size: 20px;
     line-height: 28px;
-
-    /* margin-top: 12px; */
     width: 569px;
   }
 
