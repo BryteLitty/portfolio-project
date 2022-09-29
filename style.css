@@ -31,7 +31,6 @@ nav ul {
   display: none;
 }
 
-
 .headline {
   background-image: url("./images/header-shapes\ mobile@2x.svg");
 }
@@ -190,12 +189,11 @@ nav ul {
   outline: none;
 }
 
-
 .card button:active,
 .form-button:active,
 #about .btn-resume:active {
   color: #fff;
-  background-color: #2230D2;
+  background-color: #2230d2;
 }
 
 .languages h1 {
