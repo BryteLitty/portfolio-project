@@ -101,8 +101,14 @@ nav ul {
   margin: auto 25px;
 }
 
+.image-container img {
+  transition: 500ms linear;
+}
+
 .card img {
-  width: 100%;
+  width: 98%;
+  height: 98%;
+  text-align: center;
 }
 
 .texts h1 {
@@ -193,6 +199,17 @@ nav ul {
   font-weight: 500;
   font-size: 17px;
   border-radius: 8px;
+}
+
+/* Animations and transitions */
+.card button:hover,
+.btn-resume:hover,
+.form-button:hover {
+  transition: all ease-out 0.8s;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
 }
 
 .card button:hover,
