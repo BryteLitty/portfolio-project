@@ -209,7 +209,7 @@ nav ul {
 }
 
 .image-container img:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 .card button:hover,
