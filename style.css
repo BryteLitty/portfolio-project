@@ -101,6 +101,10 @@ nav ul {
   margin: auto 25px;
 }
 
+.image-container img {
+  transition: 500ms linear;
+}
+
 .card img {
   width: 98%;
   height: 98%;
@@ -195,6 +199,17 @@ nav ul {
   font-weight: 500;
   font-size: 17px;
   border-radius: 8px;
+}
+
+/* Animations and transitions */
+.card button:hover,
+.btn-resume:hover,
+.form-button:hover {
+  transition: all ease-out 0.8s;
+}
+
+.image-container img:hover {
+  transform: scale(1.06);
 }
 
 .card button:hover,
@@ -547,12 +562,4 @@ input:focus:invalid {
     text-align: center;
     font-weight: 500;
   }
-
 }
-
-/* Animations and transitions */
-.card button:hover,
-.btn-resume:hover,
-.form-button:hover{
-  transition: all ease-out .8s;
-} 
