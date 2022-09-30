@@ -102,7 +102,9 @@ nav ul {
 }
 
 .card img {
-  width: 100%;
+  width: 98%;
+  height: 98%;
+  text-align: center;
 }
 
 .texts h1 {
@@ -545,4 +547,12 @@ input:focus:invalid {
     text-align: center;
     font-weight: 500;
   }
+
 }
+
+/* Animations and transitions */
+.card button:hover,
+.btn-resume:hover,
+.form-button:hover{
+  transition: all ease-out .8s;
+} 
