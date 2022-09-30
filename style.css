@@ -563,3 +563,21 @@ input:focus:invalid {
     font-weight: 500;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Animations and transitions */
+.card button:hover,
+.btn-resume:hover,
+.form-button:hover{
+  transition: all ease-out .8s;
+} 
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  transition: 500ms linear; 
+}
+>>>>>>> fa9dff7c20e470264a03d4d3953677b9cdb4dd90
