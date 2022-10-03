@@ -1,11 +1,16 @@
 ## Hello-Microvese
-This my portfolion website project. This is a simple project to showcase my projects and also tell somethig brief more about myself.
-This is one early stage projects as a Microverse Student
+This my portfolio website project. It's a simple project to showcase my works as a developer and also share a brief about myself.
+This is one early stage projects as a Microverse Student.
 
 
 ### Built With
 - HTML 
 - CSS
+
+### Live Demo 
+You can check the program live via:
+
+[Live Demo](https://brytelitty.github.io/portfolio-project/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple steps:
