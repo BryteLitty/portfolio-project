@@ -58,7 +58,7 @@ nav ul {
 }
 
 .mobile-menu {
-  background-color: #6070FF;
+  background-color: #6070ff;
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -73,7 +73,7 @@ nav ul {
   transform: translateX(0);
 }
 
-.mobile-menu ul{
+.mobile-menu ul {
   list-style-type: none;
 }
 
@@ -382,7 +382,7 @@ input:focus:invalid {
 
 /* for desktop */
 @media (min-width: 768px) {
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
 
