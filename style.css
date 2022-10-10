@@ -44,6 +44,43 @@ nav ul {
   display: none;
 }
 
+.mobile-menu {
+  background-color: #6070FF;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  padding: 28px;
+  opacity: 0.8;
+  transition: all 0.2s linear;
+  transform: translateX(-100%);
+}
+
+.show-mobile-menu {
+  transform: translateX(0);
+}
+
+.mobile-menu ul{
+  list-style-type: none;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.list-item {
+  line-height: 44px;
+  margin: 25px 0;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: end;
+}
+
 .headline {
   background-image: url("./images/header-shapes\ mobile@2x.svg");
 }
@@ -332,6 +369,10 @@ input:focus:invalid {
 
 /* for desktop */
 @media (min-width: 768px) {
+  .mobile-menu{
+    display: none;
+  }
+
   .logo {
     font-size: 18px;
   }
