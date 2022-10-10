@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Lilita+One&family=Montserrat+Alternates:wght@100&family=Montserrat:ital,wght@0,900;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +16,15 @@ body {
 
 main {
   background-color: red;
+}
+
+header {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
 
 .logo a {
@@ -42,6 +55,43 @@ nav button {
 
 nav ul {
   display: none;
+}
+
+.mobile-menu {
+  background-color: #6070ff;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  padding: 28px;
+  opacity: 0.8;
+  transition: all 0.2s linear;
+  transform: translateX(-100%);
+}
+
+.show-mobile-menu {
+  transform: translateX(0);
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.list-item {
+  line-height: 44px;
+  margin: 25px 0;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: end;
 }
 
 .headline {
@@ -332,6 +382,10 @@ input:focus:invalid {
 
 /* for desktop */
 @media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
   .logo {
     font-size: 18px;
   }

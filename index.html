@@ -23,9 +23,9 @@
                 </button>
 
                 <ul>
-                    <li><a href="#" class="">Portfolio</a></li>
-                    <li><a href="#" class="">About</a></li>
-                    <li><a href="#" class="">Contact</a></li>
+                    <li><a href="#works" class="">Portfolio</a></li>
+                    <li><a href="#about" class="">About</a></li>
+                    <li><a href="#contacts" class="">Contact</a></li>
                 </ul>
             </div>
 
@@ -33,7 +33,20 @@
     </header>
 
     <!-- <main> -->
-        <section class="headline-section">
+
+        <div class="mobile-menu">
+            <div class="close-btn">
+                <img src="./images/icons/closeBtn.svg" alt="closeBtn">
+            </div>
+        
+            <ul>
+                <li class="list-item"><a href="#works">Portfolio</a></li>
+                <li class="list-item"><a href="#about">About</a></li>
+                <li class="list-item"><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+
+        <section class="headline-section" id="home">
             <div class="wrapper">
                 <div class="headline">
                     <div class="container">
@@ -342,7 +355,7 @@
         </section>
     <!-- </main> -->
     <!--   End of About Section   -->
-    <footer class="contact">
+    <footer class="contact" id="contacts">
         <div class="footer-container">
             <div class="wrapper">
                 <div class="text-container">
@@ -381,5 +394,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
