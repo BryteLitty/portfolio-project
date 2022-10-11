@@ -108,6 +108,10 @@ modalBtn.forEach((btn) => {
                     </div>
                 </div>`
     modal.style.display = "block";
+    const closeModal = document.getElementById('closeBtn');
+    closeModal.addEventListener('click', () =>{
+      modal.style.display = 'none';
+    })
   });
 });
 
