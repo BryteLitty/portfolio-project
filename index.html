@@ -8,7 +8,8 @@
 
     <!-- fontawesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
     </header>
 
     <!-- <main> -->
-
+        <!--  -->
         <div class="mobile-menu">
             <div class="close-btn">
                 <img src="./images/icons/closeBtn.svg" alt="closeBtn">
@@ -44,6 +45,63 @@
                 <li class="list-item"><a href="#about">About</a></li>
                 <li class="list-item"><a href="#contacts">Contact</a></li>
             </ul>
+        </div>
+
+        <!-- popup mobile menu -->
+        <div class="mobile-menu">
+            <div class="close-btn">
+                <img src="./images/icons/closeBtn.svg" alt="closeBtn">
+            </div>
+        
+            <ul>
+                <li class="list-item"><a href="#works">Portfolio</a></li>
+                <li class="list-item"><a href="#about">About</a></li>
+                <li class="list-item"><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Project Modal -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="closeBtn" class="close-btn">&times;</span>
+                    <h1>Tonic</h1>
+                    <ul class="below">
+                        <li class="canopy">canopy</li>
+                        <li><img src="./images/Counter.svg" alt=""></li>
+                        <li>Back End Dev</li>
+                        <li><img src="./images/Counter.svg" alt=""></li>
+                        <li>2015</li>
+                    </ul>
+                    <div class="modal-img-container">
+                        <img src="./images/tonic1.svg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
+                            centuries, but also the leap into electronic typesetting, remaining essent
+                        </p>
+                        <ul class="skills">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                        </ul>
+                        <hr>
+                        <div class="btn-container">
+                            <button class="modal-btn">
+                                See Live
+                                <img src="./images/icons/live.png" alt="see live">
+                            </button>
+                                <button class="modal-btn">
+                                Source
+                                <img src="./images/icons/github_blue.png" alt="see live">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section class="headline-section" id="home">
@@ -137,7 +195,7 @@
                             </ul>
                         </div>
         
-                        <button>See Project</button>
+                        <button data-id="1" class="modalBtn">See Project</button>
                     </div>
                     
                 </div>
@@ -172,7 +230,7 @@
                             </ul>
                         </div>
         
-                        <button>See Project</button>
+                        <button data-id="2" class="modalBtn">See Project</button>
                     </div>
     
                     
@@ -208,7 +266,7 @@
                             </ul>
                         </div>
         
-                        <button>See Project</button>
+                        <button data-id="3" class="modalBtn">See Project</button>
                     </div>
                     
                 </div>
@@ -243,7 +301,7 @@
                             </ul>
                         </div>
         
-                        <button>See Project</button>
+                        <button data-id="4" class="modalBtn">See Project</button>
                     </div>
                     
                 </div>
