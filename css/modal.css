@@ -40,9 +40,6 @@
   margin: 10px 0;
 }
 
-/* .modal p{
-    text-align: justify;
-} */
 
 .modal ul {
   padding-top: 10px;
@@ -142,7 +139,6 @@
 
   .modal-img-container img {
     max-width: 100%;
-    height: auto%;
   }
 
   .btn-container {
