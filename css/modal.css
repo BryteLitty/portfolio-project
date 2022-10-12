@@ -40,7 +40,6 @@
   margin: 10px 0;
 }
 
-
 .modal ul {
   padding-top: 10px;
   width: 80%;
@@ -127,7 +126,7 @@
   }
 
   .modal-content {
-    width: 95%;
+    width: 80%;
     padding: 24px 24px 100px;
     margin: auto;
   }
