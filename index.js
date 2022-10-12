@@ -118,9 +118,19 @@ modalBtn.forEach((btn) => {
   });
 });
 
-window.addEventLister('click', (e) => {
-  if(e.target == modal) {
-    modal.style.display = 'none'
+
+// Form Validation
+const form = document.querySelector(".form");
+const error = document.querySelector(".error")
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailInput = form.elements['email'].value;
+  const correctInput = emailInput.toLowerCase();
+
+  if(emailInput == correctInput) {
+    form.submit();
+  } else {
+    error.style.display = 'block'
   }
-  
-})
+});

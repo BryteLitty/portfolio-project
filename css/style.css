@@ -613,3 +613,11 @@ input:focus:invalid {
     font-weight: 500;
   }
 }
+
+
+/* form validation */
+.error {
+  display: none;
+  color: red;
+  font-size: 20px;
+}
