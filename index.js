@@ -1,4 +1,4 @@
-// Model Dataset 
+// Model Dataset
 const data = [
   {
     heading: 'Tonic',
@@ -11,7 +11,7 @@ const data = [
     githubUrl: 'https://github.com/BryteLitty/portfolio-project',
   },
   {
-    heading: 'Muliti Stores',
+    heading: 'Project Availabity',
     image: './images/Multipost1.svg',
     paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -21,7 +21,7 @@ const data = [
     githubUrl: 'https://github.com/BryteLitty/portfolio-project',
   },
   {
-    heading: 'Muliti Stores',
+    heading: 'Redfluxx',
     image: './images/tonic2.svg',
     paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -31,7 +31,7 @@ const data = [
     githubUrl: 'https://github.com/BryteLitty/portfolio-project',
   },
   {
-    heading: 'Muliti Stores',
+    heading: 'Professional Art Printing',
     image: './images/Multpost2.svg',
     paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -42,11 +42,14 @@ const data = [
   },
 ];
 
-
 const openBtn = document.querySelector('.nav-icon');
 const closeBtn = document.querySelector('.close-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelectorAll('.list-item');
+// Modal functionality
+const modal = document.getElementById('projectModal');
+const modalContent = document.querySelector('.modal-wrapper');
+const modalBtn = document.querySelectorAll('.modalBtn');
 
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.add('show-mobile-menu');
@@ -62,18 +65,12 @@ navLinks.forEach((link) => {
   });
 });
 
-
-// Modal functionality
-const modal = document.getElementById('projectModal');
-const modalContent = document.querySelector('.modal-content');
-const modalBtn = document.querySelectorAll('.modalBtn');
-
 modalBtn.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-    let i = e.currentTarget.dataset.id - 1;
+    const i = e.currentTarget.dataset.id - 1;
     modalContent.innerHTML = `
-    <div class="modal-header">
-                    <span id="closeBtn" class="close-btn">&times;</span>
+    <div class="modal-content">
+                    <span id="closeBtn" class="closeModal">&times;</span>
                     <h1>${data[i].heading}</h1>
                     <ul class="below">
                         <li class="canopy">canopy</li>
@@ -85,33 +82,45 @@ modalBtn.forEach((btn) => {
                     <div class="modal-img-container">
                         <img src="${data[i].image}" alt="">
                     </div>
+
                     <div class="info">
-                        <p>
-                           ${data[i].paragraph}
-                        </p>
-                        <ul class="skills">
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javascript</li>
-                        </ul>
-                        <hr>
-                        <div class="btn-container">
-                            <button class="modal-btn">
-                                See Live
-                                <img src="./images/icons/live.png" alt="see live">
-                            </button>
-                                <button class="modal-btn">
-                                Source
-                                <img src="./images/icons/github_blue.png" alt="see live">
-                            </button>
+                        <div class="text">
+                            <p>${data[i].paragraph}</p>    
+                        </div>
+
+                        <div class="side">
+                            <ul class="skills">
+                                <li>html</li>
+                                <li>css</li>
+                                <li>javascript</li>
+                            </ul>
+                            <hr>
+                            <div class="btn-container">
+                                <a href="${data[i].liveUrl}">
+                                    <button class="modal-btn"> 
+                                        See Live <img src="./images/icons/live.png" alt="see live">
+                                    </button>
+                                </a>
+                                <a href="${data[i].githubUrl}">
+                                    <button class="modal-btn">
+                                    Source <img src="./images/icons/github_blue.png" alt="see live">
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>`
-    modal.style.display = "block";
+                </div>`;
+    modal.style.display = 'block';
     const closeModal = document.getElementById('closeBtn');
-    closeModal.addEventListener('click', () =>{
+    closeModal.addEventListener('click', () => {
       modal.style.display = 'none';
-    })
+    });
   });
 });
 
+window.addEventLister('click', (e) => {
+  if(e.target == modal) {
+    modal.style.display = 'none'
+  }
+  
+})
