@@ -37,6 +37,10 @@ To run the project do the following:
 - LinkedIn: [Bright Kportiklah](https://www.linkedin.com/in/bright-kportiklah-05512418a/)
 
 ### Contributing
+- [Ada Rachel](https://github.com/adarachel)
+- [Emmanuel Munyite](https://github.com/munyite001)
+
+### Contributing
 🤝 Contributions, issues, and feature requests are welcome!
 
 ### Show me love
