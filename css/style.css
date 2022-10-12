@@ -14,10 +14,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-main {
-  background-color: red;
-}
-
 header {
   position: fixed;
   overflow: hidden;
