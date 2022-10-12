@@ -376,6 +376,14 @@ input:focus:invalid {
   box-shadow: none;
 }
 
+/* form validation */
+.error {
+  display: none;
+  color: red;
+  font-size: 20px;
+  font-family: monospace;
+}
+
 /* for desktop */
 @media (min-width: 768px) {
   .mobile-menu {
@@ -612,12 +620,4 @@ input:focus:invalid {
     text-align: center;
     font-weight: 500;
   }
-}
-
-
-/* form validation */
-.error {
-  display: none;
-  color: red;
-  font-size: 20px;
 }

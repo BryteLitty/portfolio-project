@@ -50,6 +50,9 @@ const navLinks = document.querySelectorAll('.list-item');
 const modal = document.getElementById('projectModal');
 const modalContent = document.querySelector('.modal-wrapper');
 const modalBtn = document.querySelectorAll('.modalBtn');
+// Form Validation Selectors
+const form = document.querySelector('.form');
+const error = document.querySelector('.error');
 
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.add('show-mobile-menu');
@@ -118,20 +121,16 @@ modalBtn.forEach((btn) => {
   });
 });
 
-
 // Form Validation
-const form = document.querySelector(".form");
-const error = document.querySelector(".error")
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const emailInput = form.elements['email'].value;
+  const emailInput = form.elements.email.value;
   const correctInput = emailInput.toLowerCase();
 
-  if(emailInput == correctInput) {
+  if (emailInput === correctInput) {
     form.submit();
   } else {
     error.style.display = 'block';
-    form.elements['email'].style.border = '1px solid red';
+    form.elements.email.style.border = '1px solid red';
   }
 });
