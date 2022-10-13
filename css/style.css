@@ -91,7 +91,7 @@ nav ul {
 }
 
 .headline {
-  background-image: url("./images/header-shapes\ mobile@2x.svg");
+  background-image: url("../images/header-shapes\ mobile@2x.svg");
 }
 
 .headline .container {
@@ -321,7 +321,7 @@ hr {
 }
 
 .footer-container {
-  background: url(./images/contact-form-shape.svg) no-repeat 100% 30%;
+  background: url(../images/contact-form-shape.svg) no-repeat 100% 30%;
 }
 
 .contact .text-container {
@@ -420,7 +420,7 @@ input:focus:invalid {
 
   .headline {
     margin: 0 3px 0 34.6px;
-    background: url(./images/desktop/header-shapes\ mobile@2x.svg) no-repeat 100% 30%;
+    background: url(../images/desktop/header-shapes\ mobile@2x.svg) no-repeat 100% 30%;
   }
 
   .headline .container {
@@ -593,7 +593,7 @@ input:focus:invalid {
   }
 
   .footer-container {
-    background: url(./images/desktop/contact-desktop-bg.svg) no-repeat 100% 30%;
+    background: url(../images/desktop/contact-desktop-bg.svg) no-repeat 100% 30%;
     margin: 0 79px;
   }
 
