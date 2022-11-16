@@ -1,25 +1,15 @@
 // Model Dataset
 const data = [
   {
-    heading: 'Tonic',
-    image: './images/tonic1.svg',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
-    centuries, but also the leap into electronic typesetting, remaining essent`,
-    liveUrl: 'https://microverse.com',
-    githubUrl: 'https://github.com/BryteLitty/portfolio-project',
+    heading: 'Awesome Books',
+    image: './projects-img/awesome-books.png',
+    paragraph: `A single-page web application built with HTML, 
+    CSS and JavaScript which allows users to add Books and names of the author. Added books are displayed on a separate page with remove 
+    buttons assigned for easy removal of books`,
+    liveUrl: 'https://brytelitty.github.io/Awesome-books/#',
+    githubUrl: 'https://github.com/BryteLitty/Awesome-books',
   },
-  {
-    heading: 'Project Availabity',
-    image: './images/Multipost1.svg',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
-    centuries, but also the leap into electronic typesetting, remaining essent`,
-    liveUrl: 'https://microverse.com',
-    githubUrl: 'https://github.com/BryteLitty/portfolio-project',
-  },
+  
   {
     heading: 'Redfluxx',
     image: './images/tonic2.svg',
@@ -29,6 +19,14 @@ const data = [
     centuries, but also the leap into electronic typesetting, remaining essent`,
     liveUrl: 'https://microverse.com',
     githubUrl: 'https://github.com/BryteLitty/portfolio-project',
+  },
+  {
+    heading: 'Project Availabity',
+    image: './projects-img/todo-list.png',
+    paragraph: `A Todo-List web application build with HTML, CSS, JavaScript and which allows you to add items, mark items as completed and deleted them, and also allows 
+    user to make edits to items already in the todo list.`,
+    liveUrl: 'https://brytelitty.github.io/Todo-App/dist/',
+    githubUrl: 'https://github.com/BryteLitty/Todo-App',
   },
   {
     heading: 'Professional Art Printing',
