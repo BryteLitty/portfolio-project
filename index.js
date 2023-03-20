@@ -48,9 +48,6 @@ const navLinks = document.querySelectorAll('.list-item');
 const modal = document.getElementById('projectModal');
 const modalContent = document.querySelector('.modal-wrapper');
 const modalBtn = document.querySelectorAll('.modalBtn');
-// Form Validation Selectors
-const form = document.querySelector('.form');
-const error = document.querySelector('.error');
 
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.add('show-mobile-menu');
@@ -119,6 +116,30 @@ modalBtn.forEach((btn) => {
   });
 });
 
+// Form Validation Selectors
+const form = document.querySelector('.form');
+const error = document.querySelector('.error');
+// Local Storage
+const email = document.querySelector('.emailInput');
+const fullName = document.querySelector('.nameInput');
+const message = document.querySelector('.msgInput');
+
+const inputInfo = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+// function to save form inputs
+const saveData = () => {
+  inputInfo.fullName = fullName.value;
+  inputInfo.email = email.value;
+  inputInfo.message = message.value;
+  // Stringify data
+  const storeData = JSON.stringify(inputInfo);
+
+  localStorage.setItem('userInfo', storeData);
+};
 // Form Validation
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -126,9 +147,18 @@ form.addEventListener('submit', (e) => {
   const correctInput = emailInput.toLowerCase();
 
   if (emailInput === correctInput) {
+    saveData();
     form.submit();
   } else {
     error.style.display = 'block';
     form.elements.email.style.border = '1px solid red';
   }
 });
+
+// get data from local storage and show in the form input
+const getData = localStorage.getItem('userInfo');
+const newData = JSON.parse(getData);
+
+fullName.value = newData.fullName;
+email.value = newData.email;
+message.value = newData.message;
